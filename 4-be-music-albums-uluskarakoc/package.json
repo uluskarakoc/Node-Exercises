@@ -1,0 +1,26 @@
+{
+  "name": "be-music-albums-uluskarakoc",
+  "version": "1.0.0",
+  "description": "In dieser Aufgabe entwickelst du eine einfache Express-Anwendung bzw. REST API zur Verwaltung von Musikalben. Jedes Album sollte die folgenden Eigenschaften haben:",
+  "main": "lowdbConfig-extended.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/22-d08-a/be-music-albums-uluskarakoc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/22-d08-a/be-music-albums-uluskarakoc/issues"
+  },
+  "homepage": "https://github.com/22-d08-a/be-music-albums-uluskarakoc#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "lowdb": "^6.0.1",
+    "nodemon": "^2.0.22"
+  }
+}
