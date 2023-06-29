@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Fluffy",
+        "kind": "Dog",
+        "favoriteFood": "Meat",
+        "age": 5
+    },
+    {
+        "name": "Zoey",
+        "kind": "Cat",
+        "favoriteFood": "Meat",
+        "age": 1
+    },
+    {
+        "name": "Felicitas",
+        "kind": "Cat",
+        "favoriteFood": "Milk",
+        "age": 2
+    },
+    {
+        "name": "Justus",
+        "kind": "Cat",
+        "favoriteFood": "Meat",
+        "age": 5
+    },
+    {
+        "name": "Brutus",
+        "kind": "Dog",
+        "age": 4
+    },
+    {
+        "name": "Tom",
+        "kind": "Cat",
+        "favoriteFood": "Meat",
+        "age": 7
+    },
+    {
+        "name": "Jerry",
+        "kind": "Mouse",
+        "favoriteFood": "Cheese",
+        "age": 4
+    },
+    {
+        "name": "Tweety",
+        "kind": "Bird",
+        "favoriteFood": "Corn",
+        "age": 2
+    },
+    {
+        "name": "Mickey",
+        "kind": "Mouse",
+        "favoriteFood": "Cheese",
+        "age": 10
+    },
+    {
+        "name": "Jack",
+        "kind": "Snake",
+        "favoriteFood": "Mice",
+        "age": 6
+    },
+    {
+        "name": "Frodo",
+        "kind": "Hamster",
+        "favoriteFood": "Carrot",
+        "age": 3
+    },
+    {
+        "name": "Jack",
+        "kind": "Rabbit",
+        "favoriteFood": "Carrot",
+        "age": 6
+    },
+    {
+        "name": "Flappy",
+        "kind": "Bird",
+        "favoriteFood": "Insects",
+        "age": 6
+    }
+]
