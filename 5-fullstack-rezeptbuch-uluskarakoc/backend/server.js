@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import {getAllRecipes} from "./controller/recipeControlles.js"
+
 dotenv.config();
 
 const app = express();
@@ -13,6 +14,8 @@ if (currentEnv === "dev") {
   app.use(cors());
   app.use(morgan("combined"));
 }
+
+
 app.get("/recipes",getAllRecipes);
 
 

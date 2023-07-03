@@ -1,7 +1,7 @@
 {
   "name": "5-fullstack-rezeptbuch-uluskarakoc",
   "version": "1.0.0",
-  "description": "## Beschreibung Diese Anwendung ermöglicht es dir, deine Lieblingsrezepte zu speichern, abzurufen, zu aktualisieren und zu löschen. Die Rezepte werden in einer Datenbank (mit `lowdb`) gespeichert und du interagierst mit der Anwendung über ein Frontend, das mit React erstellt wurde.",
+  "description": "aufgaben",
   "main": "index.js",
   "type": "module",
   "scripts": {
