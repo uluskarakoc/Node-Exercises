@@ -1,0 +1,16 @@
+{
+  "name": "be-restaurant-management-system",
+  "version": "1.0.0",
+  "description": "Stell dir vor, du hast die Aufgabe, die Backend-Logik für ein Restaurant zu erstellen. Hier sind einige Anforderungen:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.3.2"
+  }
+}

@@ -20,26 +20,7 @@ Finde nur die Person mit dem Namen **Angelo**
 Antwort:
 ```json
 db.data.find({ name: "Angelo" })
-{
-  _id: ObjectId("649d43e0d9a694dd2cb33dac"),
-  name: 'Angelo',
-  age: 25,
-  pets: [
-    {
-      name: 'Zoey',
-      kind: 'Cat'
-    },
-    {
-      name: 'Felicitas',
-      kind: 'Cat'
-    }
-  ],
-  hobbies: [
-    'musicals',
-    'art',
-    'cats'
-  ]
-}
+
 ```
 
 ### 2. Finde Alle mit A im Namen
@@ -48,46 +29,8 @@ Finde allePersonen mit einem "A" im Namen
 Antwort:
 ```json
 db.data.find({ name: { $regex: "A" } })
-{
-  _id: ObjectId("649d43e0d9a694dd2cb33dac"),
-  name: 'Angelo',
-  age: 25,
-  pets: [
-    {
-      name: 'Zoey',
-      kind: 'Cat'
-    },
-    {
-      name: 'Felicitas',
-      kind: 'Cat'
-    }
-  ],
-  hobbies: [
-    'musicals',
-    'art',
-    'cats'
-  ]
-}
-{
-  _id: ObjectId("649d43e0d9a694dd2cb33dac"),
-  name: 'Angelo',
-  age: 25,
-  pets: [
-    {
-      name: 'Zoey',
-      kind: 'Cat'
-    },
-    {
-      name: 'Felicitas',
-      kind: 'Cat'
-    }
-  ],
-  hobbies: [
-    'musicals',
-    'art',
-    'cats'
-  ]
-}
+
+
 ```
 
 ### 3. Finde alle mit genau 25 Jahren
@@ -96,37 +39,8 @@ Finde alle Personen, deren Alter genau **25** ist.
 Antwort:
 ```json
 db.data.find({age:25})
-{
-  _id: ObjectId("649d43e0d9a694dd2cb33daa"),
-  name: 'Peter',
-  age: 25,
-  pets: [],
-  hobbies: [
-    'football',
-    'reading',
-    'movies'
-  ]
-}
-{
-  _id: ObjectId("649d43e0d9a694dd2cb33dac"),
-  name: 'Angelo',
-  age: 25,
-  pets: [
-    {
-      name: 'Zoey',
-      kind: 'Cat'
-    },
-    {
-      name: 'Felicitas',
-      kind: 'Cat'
-    }
-  ],
-  hobbies: [
-    'musicals',
-    'art',
-    'cats'
-  ]
-}
+
+ 
 ```
 
 ### 4. Finde alle im Alter von 20 bis 30
@@ -135,53 +49,9 @@ Finde alle Personen, deren Alter zwischen 20 und 30 Jahren liegt (inklusive 20 u
 Antwort:
 ```json
 db.data.find({age:{$gte:20,$lte:30}})
-{
-  _id: ObjectId("649d43e0d9a694dd2cb33daa"),
-  name: 'Peter',
-  age: 25,
-  pets: [],
-  hobbies: [
-    'football',
-    'reading',
-    'movies'
-  ]
-}
-{
-  _id: ObjectId("649d43e0d9a694dd2cb33dab"),
-  name: 'Tina',
-  age: 22,
-  pets: [
-    {
-      name: 'Fluffy',
-      kind: 'Dog'
-    }
-  ],
-  hobbies: [
-    'reading',
-    'movies',
-    'music'
-  ]
-}
-{
-  _id: ObjectId("649d43e0d9a694dd2cb33dac"),
-  name: 'Angelo',
-  age: 25,
-  pets: [
-    {
-      name: 'Zoey',
-      kind: 'Cat'
-    },
-    {
-      name: 'Felicitas',
-      kind: 'Cat'
-    }
-  ],
-  hobbies: [
-    'musicals',
-    'art',
-    'cats'
-  ]
-}
+
+ 
+ 
 ```
 
 ### 5. Finde alle unter 20
@@ -190,17 +60,7 @@ Finde alle Personen, deren Alter unter **20** ist.
 Antwort:
 ```json
 db.data.find({ age: { $lt: 20 } })
-{
-  _id: ObjectId("649d43e0d9a694dd2cb33dae"),
-  name: 'Luke',
-  age: 19,
-  pets: [],
-  hobbies: [
-    'football',
-    'movies',
-    'sport'
-  ]
-}
+
 ```
 
 ### 6. Finde Luke und Abdu
@@ -209,19 +69,7 @@ Finde nur die zwei Personen mit den Namen, **Luke** und **Abdu**.
 Antwort:
 ```json
 db.people.find({ name: { $in: ["Luke", "Abdu"] } })
-{
-  _id: ObjectId("649d43e0d9a694dd2cb33dae"),
-  name: 'Luke',
-  age: 19,
-  pets: [],
-  hobbies: [
-    'football',
-    'movies',
-    'sport'
-  ]
-}
 
-```
 
 ### 7. Finde alle mit Haustier
 Finde alle (3) Personen mit einem oder mehreren Haustieren.

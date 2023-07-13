@@ -39,13 +39,7 @@ db.animal.insertMany([{
         "favoriteFood": "Cheese",
         "age": 4
     },])
-    {
-  acknowledged: true,
-  insertedIds: {
-    '0': ObjectId("649d84fdd9a694dd2cb33db0"),
-    '1': ObjectId("649d84fdd9a694dd2cb33db1")
-  }
-}
+ 
 
 ```
 
@@ -59,13 +53,7 @@ db.animal.updateMany(
     { "age": { $gte: 5 } },
     { $set: { "old": true } }
 )
-{
-  acknowledged: true,
-  insertedId: null,
-  matchedCount: 0,
-  modifiedCount: 0,
-  upsertedCount: 0
-}
+
 ```
 
 ## Markiere die Vegetarier
@@ -77,13 +65,7 @@ db.animal.updateMany(
     { "kind": { $in: ["rabbit", "mouse", "bird", "hamster"] } },
     { $set: { "vegetarian": true } }
 )
-{
-  acknowledged: true,
-  insertedId: null,
-  matchedCount: 0,
-  modifiedCount: 0,
-  upsertedCount: 0
-}
+
 ```
 
 ## Tiere löschen
@@ -93,8 +75,5 @@ Jack, die Schlange, soll natürlich nicht gelöscht werden.
 Antwort:
 ```
 db.animal.deleteOne({ "name": "Jack", "kind": "rabbit" })
-{
-  acknowledged: true,
-  deletedCount: 0
-}
+
 ```
