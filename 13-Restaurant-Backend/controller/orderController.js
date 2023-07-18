@@ -34,12 +34,10 @@ export const updateOrders = async (req, res) => {
 
 export const deleteOrder = async (req, res) => {
   const orderId = req.params.id;
-
   try {
-    const deleteOrder = await OrderModel.findByIdAndDelete(orderId, req.body);
-    res.send("deleted");
-    console.log(2);
+    const deleteOrder = await OrderModel.findByIdAndDelete(orderId);
+    res.send("order deleted");
   } catch (error) {
-    console.error(error.message);
+    console.error(error);
   }
 };
