@@ -1,5 +1,5 @@
 import { OrderModel } from "../models/order.js";
-
+import { TableModel } from "../models/table.js";
 export const getOrders = async (req, res) => {
   try {
     const orders = await OrderModel.find();
@@ -22,8 +22,9 @@ export const getOrders = async (req, res) => {
 
 export const createOrders = async (req, res) => {
   const orderData = req.body;
+  const tableId = req.params.id;
   orderData.table = tableId;
-  //  Burada anlasilamayan seyler var bunlari sormam lazim. genel amanda anlamak icin...
+  
   const order = new OrderModel(orderData);
   try {
     const table = await TableModel.findById(tableId);
